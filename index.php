@@ -50,7 +50,7 @@ if(isset($_GET["id"])){
             <div class="form-group col-md-6">
               <label for="anoDLanc">Ano de lançamento</label>
               <input type="number" name="anoDLanc" min="1946" max="2030" step="1" value="2022" class="form-control" id="anoDLanc" required value="<?= 
-              isset($detalhe) ? $detalhe->getAnoDLan() : ''; ?>">
+              isset($detalhe) ? $detalhe->getAnoDLanc() : ''; ?>">
             </div>
           </div>
           <div class="form-row">
