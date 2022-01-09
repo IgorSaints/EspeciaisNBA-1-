@@ -7,7 +7,7 @@ if(isset($_GET["id"])){
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
 	<meta charset="utf-8">
@@ -48,7 +48,7 @@ if(isset($_GET["id"])){
             </div>
             <div class="form-group col-md-6">
               <label for="anoDLanc">Ano de lançamento</label>
-              <input type="number" name="anoDLanc" min="1946" max="2030" step="1" value="2022" class="form-control" id="anoDLanc" required value="<?= 
+              <input type="number" name="anoDLanc" min="1946" max="2030" placeholder="Exemplo: 2017" step="1" class="form-control" id="anoDLanc" required value="<?= 
               isset($detalhe) ? $detalhe->getAnoDLanc() : ''; ?>">
             </div>
           </div>
@@ -80,7 +80,7 @@ if(isset($_GET["id"])){
           </div>
           <div class="botoes pt-3">
           <input type="hidden" name="id" value="<?= isset($detalhe)? $detalhe->getId() : '';?>">
-            <input class="login btn btn-success" type="submit" id="send" value="Enviar" href="" data-toggle="modal" data-target="#modal-mensagem" onclick="abrePopup()">
+            <input class="login btn btn-success" type="submit" id="send" value="Enviar" data-toggle="modal" data-target="#modal-mensagem" onclick="abrePopup()">
             <input class="cancelar btn btn-danger"  type ="button" value="Cancelar">
           </div>
           </fieldset>

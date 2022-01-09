@@ -7,7 +7,7 @@ if(isset($_GET["id"])){
 }
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
 	<meta charset="utf-8">
@@ -38,27 +38,25 @@ if(isset($_GET["id"])){
     <table class="table table-dark">
   <thead class="text-center bg-success">
     <tr>
-      <div class="container ">
-        <div class="row">
+      
       <th scope="col" class="col-lg-2">Time</th>
       <th scope="col" class="col-lg-2">Ano de Lançamento</th>
       <th scope="col" class="col-lg-3">Estrela que Usou</th>
       <th scope="col" class="col-lg-3">Jogo Marcante</th>
       <th scope="col" >Número</th>
       <th scope="col">Imagem</th>
-    </div>
-    </div>
+   
     </tr>
   </thead>
   <tbody>
     <tr class="text-center">
-      <td><?php echo $b->getNomeTime(); ?></td>
+      <td><p><?php echo $b->getNomeTime(); ?></p></td>
       <td><?= $b->getAnoDLanc(); ?></td>
       <td><?= $b->getEstrelaQUsou(); ?></td>
       <td><?= $b->getJogoM(); ?></td>
       <td><?= $b->getNumero(); ?></td>
       <td><figure class="mx-auto text-center">
-                <img src="<?= $b->getImagemRota(); ?>" alt="Imagem do item" width="100%" style="min-width:88px;">
+                <img src="<?= $b->getImagemRota(); ?>" alt="Imagem do item">
               </figure></td>
       
     </tr>
@@ -73,8 +71,7 @@ if(isset($_GET["id"])){
     class="card-link" onclick ="conf(this);">
     Deletar
 </a>
-        </div>
-    </div>
+       
      <?php 
    endforeach;
    ?>
