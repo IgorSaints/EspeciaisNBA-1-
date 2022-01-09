@@ -3,7 +3,6 @@ require_once "model/Detalhes.php";
 
 if(isset($_GET["id"])){
     $detalhe = Detalhes::getPorId($_GET["id"]);
-    print_r('$detalhe');
 }
 ?>
 
