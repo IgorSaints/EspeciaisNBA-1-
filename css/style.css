@@ -1,0 +1,50 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.footer-copyright{
+  background-color: #212121;
+}
+
+.topfooter{
+  background-color: #CC0000;
+}
+
+.bg-body-image{
+ background-image: url("bolasbasquete.jpg");
+ background-size: 100%;
+ height: auto;
+}
+
+.form-st{
+  background-color: #212121a1;
+  border-radius: 12px;
+}
+
+.form-group{
+  padding: 5px;
+}
+
+.bg-header{
+  background-color: #CC0000;
+}
+
+.bg_img a{
+  color: #e0e0e0ec;
+  text-decoration: none;
+}
+
+.photo_descr {
+    align-items: flex-end;
+    display: grid;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+a{
+  color: #ffffff;
+  text-decoration: none;
+}
+hr{
+  width: 60px;
+}
