@@ -80,7 +80,7 @@ if(isset($_GET["id"])){
           </div>
           <div class="botoes pt-3">
           <input type="hidden" name="id" value="<?= isset($detalhe)? $detalhe->getId() : '';?>">
-            <input class="login btn btn-success" type="submit" id="send" value="Enviar" data-toggle="modal" data-target="#modal-mensagem" onclick="abrePopup()">
+            <input class="login btn btn-success" type="submit" name="send" id="send" value="Enviar" data-toggle="modal" data-target="#modal-mensagem" onclick="abrePopup()">
             <input class="cancelar btn btn-danger"  type ="button" value="Cancelar">
           </div>
           </fieldset>

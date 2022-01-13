@@ -53,10 +53,30 @@
       <!-- Grid column -->
       <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4" id="contacte">
 
+      <!-- Links -->
+      <h6 class="text-uppercase font-weight-bold">Contacte-nos</h6>
+      <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto">
+      <p>Santa Cruz, RN, BR</p>
+      <p>
+        <a href="mailto:igor.cunha@escolar.ifrn.edu.br">igor.cunha@escolar.ifrn.edu.br</a></p>
+        <p>
+        <a href="mailto:robson.n@escolar.ifrn.edu.br">robson.n@escolar.ifrn.edu.br</a></p>
+      <p>
+        + 55 84 98630 0993</p>
+
+      </div>
+      <!-- Grid column -->
+
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4" id="contacte">
+
         <!-- Links -->
-        <h6 class="text-uppercase font-weight-bold">Contacte-nos</h6>
+        <h6 class="text-uppercase font-weight-bold">Sites parceiros</h6>
         <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto">
-        <p>Santa Cruz, RN, BR</p>
+        <p>
+          <a href="ressacaliteraria.herokuapp.com"></a>
+        </p>
         <p>
            <a href="mailto:igor.cunha@escolar.ifrn.edu.br">igor.cunha@escolar.ifrn.edu.br</a></p>
           <p>

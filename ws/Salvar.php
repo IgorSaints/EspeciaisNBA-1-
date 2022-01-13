@@ -34,10 +34,11 @@ if(isset($_FILES['imagem']['error'])){
             }else{
                 
                 $novoDetalhe->setimagem($nome,$extensao,$rota);
+                
             }
             
         }
-
+        var_dump($_FILES['imagem']);
     }else{
         echo "arquivo de foto muito grande - Max: 32MB";
     }
