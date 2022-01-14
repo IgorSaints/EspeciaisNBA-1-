@@ -50,7 +50,7 @@ if(isset($_GET["id"])){
   </thead>
   <tbody>
     <tr class="text-center">
-      <td><p><?php echo $b->getnometime(); ?></p></td>
+      <td><p><?php echo $b->getNomeTime(); ?></p></td>
       <td><?= $b->getAnoDLanc(); ?></td>
       <td><?= $b->getEstrelaQUsou(); ?></td>
       <td><?= $b->getJogoM(); ?></td>

@@ -17,7 +17,7 @@ class Detalhes{
         $this->id = $id;
         return $this;
     }
-    public function getnometime(){
+    public function getNomeTime(){
         return $this->nometime;
     }
 
