@@ -78,7 +78,7 @@ class Detalhes{
 
     public function salvar(){
         $tabela = "itens";
-        $parametros = "nomeTime, anoDLanc, estrelaQUsou, jogoM, numero, imagem"; 
+        $parametros = "nometime, anoDLanc, estrelaQUsou, jogoM, numero, imagem"; 
         $valores = "'".$this->nomeTime."', ".
         $this->anoDLanc.", '".$this->estrelaQUsou."', '".
         $this->jogoM."', ".
@@ -90,13 +90,13 @@ class Detalhes{
 
     public static function listarTodos(){
         $tabela = "itens";
-        $parametros = "id, nomeTime, anodlanc, estrelaqusou, jogom, numero, imagem";
+        $parametros = "id, nometime, anodlanc, estrelaqusou, jogom, numero, imagem";
         $dados = Conexao::select($tabela, $parametros);
         $detalhes = [];
         foreach($dados as $d){
             $b = new Detalhes();
             $b->id = $d["id"];
-            $b->nomeTime = $d["nomeTime"];
+            $b->nomeTime = $d["nometime"];
             $b->anoDLanc = $d["anodlanc"];
             $b->estrelaQUsou = $d["estrelaqusou"];
             $b->jogoM = $d["jogom"];
@@ -110,12 +110,12 @@ class Detalhes{
 
     public static function getPorId($id){
         $tabela = "itens";
-        $parametros = "id, nomeTime, anodlanc, estrelaqusou, jogom, numero, imagem";
+        $parametros = "id, nometime, anodlanc, estrelaqusou, jogom, numero, imagem";
         $dados = Conexao::selectById($tabela, $parametros, $id);
         foreach($dados as $d){
             $b = new Detalhes();
             $b->id = $d["id"];
-            $b->nomeTime = $d["nomeTime"];
+            $b->nomeTime = $d["nometime"];
             $b->anoDLanc = $d["anodlanc"];
             $b->estrelaQUsou = $d["estrelaqusou"];
             $b->jogoM = $d["jogom"];
@@ -131,7 +131,7 @@ class Detalhes{
     }
     public function editar(){
         $tabela = "itens"; 
-        $parametros = "nomeTime='".$this->nomeTime."', anoDLanc='".$this->anoDLanc."',
+        $parametros = "nometime='".$this->nomeTime."', anoDLanc='".$this->anoDLanc."',
         estrelaQUsou='".$this->estrelaQUsou."', jogoM='".$this->jogoM."', numero='".$this->numero."',
         imagem='".$this->imagem."'";
 
