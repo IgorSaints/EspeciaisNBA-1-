@@ -34,7 +34,7 @@ if(isset($_GET["id"])){
 	<main class="container p-4 p-md-5">
 		<div class="form-st p-4 p-md-5 container">
 
-			<form onsubmit="validation(event, this)" action="ws/Salvar.php" class="w-100" id="form-login" target="_parent" method="POST" enctype="multipart/form-data">
+			<form onsubmit="validation(event, this)" action="ws/Salvar.php" id="form-login" target="_parent" method="POST" enctype="multipart/form-data">
 
 				<fieldset class="fild_ie border p-3">
 					<legend class="w-auto">Item Especial</legend>
