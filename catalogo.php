@@ -27,7 +27,7 @@ if(isset($_GET["id"])){
 <body class="bg-body-image text-light">
 	<div id="header"></div>
 
-  <main class="container p-4 p-md-8">
+  <main class="container pt-4 p-md-8">
 		
 <?php
         $detalhes = detalhes::listarTodos();
@@ -61,16 +61,19 @@ if(isset($_GET["id"])){
       
     </tr>
   </tbody>
+  <div class="pb-1">
+  <a href="index.php?id=<?= $b->getId(); ?>"
+    class="btn btn-dark card-link">
+    Editar
+    </a>
+    <a href="ws/Apagar.php?id=<?= $b->getId(); ?>"
+        class="btn btn-dark card-link" onclick ="conf(this);">
+        Deletar
+    </a>
+    </div>
 </table>
 
-<a href="index.php?id=<?= $b->getId(); ?>"
-    class="card-link">
-    Editar
-</a>
-<a href="ws/Apagar.php?id=<?= $b->getId(); ?>"
-    class="card-link" onclick ="conf(this);">
-    Deletar
-</a>
+
        
      <?php 
    endforeach;
