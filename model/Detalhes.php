@@ -110,12 +110,12 @@ class Detalhes{
 
     public static function getPorId($id){
         $tabela = "itens";
-        $parametros = "id, nometime, anodlanc, estrelaqusou, jogom, numero, imagem";
+        $parametros = "id, nomeTime, anodlanc, estrelaqusou, jogom, numero, imagem";
         $dados = Conexao::selectById($tabela, $parametros, $id);
         foreach($dados as $d){
             $b = new Detalhes();
             $b->id = $d["id"];
-            $b->nomeTime = $d["nometime"];
+            $b->nomeTime = $d["nomeTime"];
             $b->anoDLanc = $d["anodlanc"];
             $b->estrelaQUsou = $d["estrelaqusou"];
             $b->jogoM = $d["jogom"];
