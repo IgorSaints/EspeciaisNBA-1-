@@ -90,16 +90,16 @@ class Detalhes{
 
     public static function listarTodos(){
         $tabela = "itens";
-        $parametros = "id, nomeTime, anoDLanc, estrelaQUsou, jogoM, numero, imagem";
+        $parametros = "id, nometime, anodlanc, estrelaqusou, jogom, numero, imagem";
         $dados = Conexao::select($tabela, $parametros);
         $detalhes = [];
         foreach($dados as $d){
             $b = new Detalhes();
             $b->id = $d["id"];
-            $b->nomeTime = $d["nomeTime"];
-            $b->anoDLanc = $d["anoDLanc"];
-            $b->estrelaQUsou = $d["estrelaQUsou"];
-            $b->jogoM = $d["jogoM"];
+            $b->nomeTime = $d["nometime"];
+            $b->anoDLanc = $d["anodlanc"];
+            $b->estrelaQUsou = $d["estrelaqusou"];
+            $b->jogoM = $d["jogom"];
             $b->numero = $d["numero"];
             $b->imagem["pasta"]=$d["imagem"];
             $detalhes[] = $b;
