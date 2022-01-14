@@ -7,7 +7,7 @@ require_once "../model/Detalhes.php";
     var_dump($_POST);
 
     $novoDetalhe = new Detalhes();
-    $novoDetalhe->setnomeTime($_POST["nometime"]);
+    $novoDetalhe->setnometime($_POST["nometime"]);
     $novoDetalhe->setAnoDLanc($_POST["anoDLanc"]);
     $novoDetalhe->setEstrelaQUsou($_POST["estrelaQUsou"]);
     $novoDetalhe->setJogoM($_POST["jogoM"]);

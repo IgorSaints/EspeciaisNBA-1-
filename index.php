@@ -43,7 +43,7 @@ if(isset($_GET["id"])){
 						<div class="form-group col-md-6">
 							<label for="time">Time</label>
               <input type="text" class="form-control" id="time" name="time" placeholder="Exemplo: Lakers" autofocus maxlength="100" minlength="3" required value="<?= 
-              isset($detalhe) ? $detalhe->getnomeTime() : ''; ?>">
+              isset($detalhe) ? $detalhe->getnometime() : ''; ?>">
              
             </div>
             <div class="form-group col-md-6">
