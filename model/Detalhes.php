@@ -21,7 +21,7 @@ class Detalhes{
         return $this->nometime;
     }
 
-    public function setnometime($nometime){
+    public function setNomeTime($nometime){
         $this->nometime = $nometime;
         return $this;
     }
