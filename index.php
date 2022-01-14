@@ -31,7 +31,7 @@ if(isset($_GET["id"])){
 
 <body class="bg-body-image text-light">
 	<div id="header"></div>
-	<main class="container p-4 p-md-5">
+	<main class="container">
 		<div class="form-st p-4 p-md-5 container">
 
 			<form onsubmit="validation(event, this)" action="ws/Salvar.php" class="w-100" id="form-login" target="_parent" method="POST" enctype="multipart/form-data">

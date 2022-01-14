@@ -23,7 +23,7 @@ if(isset($_FILES['imagem']['error'])){
         
         $pasta = "../fotos/";
         $nome = uniqid();
-        $extensao = strtolower(pathinfo($_FILES["imagem"]["name"],PATHINFO_EXTENSION));
+        $extensao = strtolower(setNomeTime($_FILES["imagem"]["name"],PATHINFO_EXTENSION));
         $rota = $pasta . $nome .".".$extensao;
         if(!$extensao == "jpeg" && !$extensao == "png"){
             echo "tipo de arquivo diferente de .png ou .jpeg";
