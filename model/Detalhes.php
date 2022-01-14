@@ -78,7 +78,7 @@ class Detalhes{
 
     public function salvar(){
         $tabela = "itens";
-        $parametros = "nomeTime, anoDLanc, estrelaQUsou, jogoM, numero, imagem"; 
+        $parametros = "nometime, anoDLanc, estrelaQUsou, jogoM, numero, imagem"; 
         $valores = "'".$this->nomeTime."', ".
         $this->anoDLanc.", '".$this->estrelaQUsou."', '".
         $this->jogoM."', ".
