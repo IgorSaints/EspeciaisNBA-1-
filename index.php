@@ -32,7 +32,7 @@ if(isset($_GET["id"])){
 <body class="bg-body-image text-light">
 	<div id="header"></div>
 	<main class="container p-4 p-md-5">
-		<div class="form-st p-4 p-md-5 container">
+		<div class="form-st p-4 p-md-5">
 
 			<form onsubmit="validation(event, this)" action="ws/Salvar.php" id="form-login" target="_parent" method="POST" enctype="multipart/form-data">
 
@@ -42,7 +42,7 @@ if(isset($_GET["id"])){
 					<div class="form-row">
 						<div class="form-group col-md-6">
 							<label for="time">Time</label>
-              <input type="text" class="form-control" id="time" name="time" placeholder="Exemplo: Lakers" autofocus maxlength="100" minlength="3" required value="<?= 
+              <input type="text" class="form-control" id="nometime" name="nometime" placeholder="Exemplo: Lakers" autofocus maxlength="100" minlength="3" required value="<?= 
               isset($detalhe) ? $detalhe->getNomeTime() : ''; ?>">
              
             </div>
